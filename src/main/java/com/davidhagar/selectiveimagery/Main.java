@@ -6,24 +6,20 @@ import com.davidhagar.selectiveimagery.ui.ProjectFrame;
 
 /**
  * Hello world!
- * 
+ *
  */
-public class Main
-{
+public class Main {
 
 
-	public static void main(String[] args)
-	{
-		java.awt.EventQueue.invokeLater(new Runnable()
-		{
-			public void run()
-			{
-				Project p = new Project();
-				p.setupInitalProject();
-				
-				new ProjectFrame(p).setVisible(true);
-			}
-		});
+    public static void main(String[] args) {
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                Project p = new Project();
+                p.setupInitalProject();
 
-	}
+                new ProjectFrame(p).setVisible(true);
+            }
+        });
+
+    }
 }
